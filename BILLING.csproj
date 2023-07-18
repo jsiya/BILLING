@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="DB\" />
+    <Folder Include="Models\" />
+    <Folder Include="StaticFiles\Fonts\" />
+    <Folder Include="StaticFiles\Images\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="SourceDataFiles\" />
+    <Folder Include="Services\" />
+    <Folder Include="ResourceDictionaries\" />
+    <Folder Include="Views\UserControls\" />
+  </ItemGroup>
+
+</Project>
