@@ -1,0 +1,53 @@
+﻿<Page x:Class="BILLING.Views.MainView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BILLING.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1000"
+      Title="MainView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0"
+                    Height="190"
+                    Width="170"
+                    Style="{StaticResource MaterialDesignPaperButton}"
+                    />
+            <Button Grid.Column="1"
+                    Height="190"
+                    Width="170"
+                    Style="{StaticResource MaterialDesignPaperButton}"
+                    />
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0"
+                    Height="190"
+                    Width="170"
+                    Style="{StaticResource MaterialDesignPaperButton}"
+                    ></Button>
+            <Button Grid.Column="1"
+                    Height="190"
+                    Width="170"
+                    Style="{StaticResource MaterialDesignPaperButton}"
+                    />
+        </Grid>
+        <Button Grid.Row="3"
+                Width="200"
+                Height="50"/>
+    </Grid>
+</Page>

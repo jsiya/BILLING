@@ -22,6 +22,8 @@ namespace BILLING.Views
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
+            MainFrame.Content = new LoginView();
         }
     }
 }

@@ -19,3 +19,13 @@ C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\refint\BILLING.dll
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\BILLING.pdb
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\BILLING.genruntimeconfig.cache
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ref\BILLING.dll
+C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\LoginView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\MainView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\App.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\LoginView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\MainView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\BILLING.csproj.CopyComplete
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ResourceDictionaries\FontStyle.baml
