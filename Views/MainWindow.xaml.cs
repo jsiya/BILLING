@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BILLING.Views.CustomerViews;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,7 @@ namespace BILLING.Views
         {
             InitializeComponent();
             DataContext = this;
-            MainFrame.Content = new LoginView();
+            MainFrame.Content = new MainMenuView();
         }
     }
 }

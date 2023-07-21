@@ -9,12 +9,15 @@
 
   <ItemGroup>
     <None Remove="StaticFiles\Fonts\TenorSans-Regular.ttf" />
+    <None Remove="StaticFiles\Images\messages-people-man-bubble-square-1.png" />
+    <None Remove="StaticFiles\Images\multiple-users-wifi.png" />
+    <None Remove="StaticFiles\Images\single-man-id-card.png" />
+    <None Remove="StaticFiles\Images\wifi-signal-4.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="DB\" />
-    <Folder Include="StaticFiles\Images\" />
     <Folder Include="SourceDataFiles\" />
     <Folder Include="Services\" />
     <Folder Include="Views\UserControls\" />
@@ -27,6 +30,10 @@
 
   <ItemGroup>
     <Resource Include="StaticFiles\Fonts\TenorSans-Regular.ttf" />
+    <Resource Include="StaticFiles\Images\messages-people-man-bubble-square-1.png" />
+    <Resource Include="StaticFiles\Images\multiple-users-wifi.png" />
+    <Resource Include="StaticFiles\Images\single-man-id-card.png" />
+    <Resource Include="StaticFiles\Images\wifi-signal-4.png" />
   </ItemGroup>
 
 </Project>

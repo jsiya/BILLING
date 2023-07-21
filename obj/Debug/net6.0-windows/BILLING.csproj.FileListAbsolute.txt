@@ -29,3 +29,15 @@ C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\LoginView.baml
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\MainView.baml
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\BILLING.csproj.CopyComplete
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ResourceDictionaries\FontStyle.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\ComplaintsView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\GeneralView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\NetworkView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\PaymentsView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\ComplaintsView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\GeneralView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\NetworkView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\PaymentsView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\MainMenuView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\MainMenuView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\UserProfileView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\UserProfileView.baml

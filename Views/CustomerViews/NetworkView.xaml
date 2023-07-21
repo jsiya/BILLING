@@ -1,0 +1,112 @@
+﻿<Page x:Class="BILLING.Views.CustomerViews.NetworkView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BILLING.Views.CustomerViews"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NetworkView">
+
+    <Page.Resources >
+        <ResourceDictionary >
+
+            <Style TargetType="TextBlock" x:Key="TBNetwork1" >
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Background" Value="Wheat" />
+                <Setter Property="VerticalAlignment" Value="Top" />
+                <Setter Property="Width" Value=" 130"/>
+                <Setter Property="Height" Value=" 30"/>
+                <Setter Property="Margin" Value="10 5 0 0 "/>
+            </Style>
+            
+            <Style TargetType="TextBlock" x:Key="TBNetwork2">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="Thin" />
+                <Setter Property="Background" Value="SkyBlue"  />
+                <Setter Property="Width" Value="130"/>
+                <Setter Property="Height" Value=" 30"/>
+                <Setter Property="Margin" Value="10 5 0 0 "/>
+            </Style>
+
+
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+    
+        <Grid.RowDefinitions >
+            <RowDefinition Height="*"/>
+            <RowDefinition  Height=" 2*"/>
+            <RowDefinition Height=" *"/>
+            <RowDefinition Height=" 2*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text=" Session Status" FontSize="30" FontWeight="Bold" Grid.Row="0" Foreground="Coral" />
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+        <StackPanel Orientation="Horizontal" Margin=" 5 10">
+            <TextBlock   Text="Start Time : " Style="{DynamicResource TBNetwork1}" />
+            <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5" Margin=" 0 3 0 0"  />-->
+            <TextBlock  Style="{DynamicResource TBNetwork1}" Text="Session Time : " />
+            <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+            <TextBlock Text="Upload : " Style="{DynamicResource TBNetwork1}" />
+            <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+            <TextBlock Style="{DynamicResource TBNetwork1}" Text="Download : " />
+            <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+            <TextBlock Text="IP : " Style="{DynamicResource TBNetwork1}" />
+            <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+            <TextBlock Style="{DynamicResource TBNetwork1}" Text="Action : " />
+            <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+           
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"   >
+            <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+            <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+            <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}"/>
+            <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+            <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+            <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+           
+        </StackPanel>
+        </StackPanel>
+
+
+
+
+        <TextBlock Text="User Status" FontSize="30" FontWeight="Bold" Grid.Row="2" Foreground="Coral"  />
+        <StackPanel Orientation="Vertical" Grid.Row="3">
+            <StackPanel Orientation="Horizontal" Margin="5 10">
+                <TextBlock Name ="TBNetworkST" Text="ID " Style="{DynamicResource TBNetwork1}" />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+                <TextBlock Name ="TBNetworkMAC" Style="{DynamicResource TBNetwork1}" Text="MAC " />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+                <TextBlock Name ="TBNetworkExpDate" Text="Expire Date " Style="{DynamicResource TBNetwork1}" />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+                <TextBlock Name ="TBNetworkExt" Style="{DynamicResource TBNetwork1}" Text="Extension " />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5" />-->
+                <TextBlock Name ="TBNetworkStatus" Text="Status " Style="{DynamicResource TBNetwork1}" />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+                <TextBlock Name ="TBNetworkCreateBy" Style="{DynamicResource TBNetwork1}" Text="Registrated By : " />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+                <TextBlock Name ="TBNetworkLastModify" Text="Modified by " Style="{DynamicResource TBNetwork1}" />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+                <TextBlock Name ="TBNetworkModBy" Style="{DynamicResource TBNetwork1}" Text="Last Modify : " />
+                <!--<Line X1="0" X2="0"  Y1="0" Y2="30" Stroke="Blue"  StrokeThickness="5"  />-->
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"   >
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}"/>
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+                <TextBlock Text=" 68:ae:73:gr:44:32" Style="{DynamicResource TBNetwork2}" />
+            </StackPanel>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Page>

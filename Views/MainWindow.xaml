@@ -16,8 +16,24 @@
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid Background="#EBEBEB">
-        <Ellipse Fill="#5C96C1" Margin="578,312,-202,-472" Width="1000" Height="1000"/>
-        <Ellipse VerticalAlignment="Bottom" HorizontalAlignment="Right" Fill="#5C96C1" Margin="-228,-366,604,206" Width="1000" Height="1000"/>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <Ellipse 
+            Fill="#5C96C1" 
+            Margin="578,312,-202,-472" 
+            Width="1000" 
+            Height="1000"/>
+        <Ellipse VerticalAlignment="Bottom" 
+                 HorizontalAlignment="Right" 
+                 Fill="#5C96C1" 
+                 Margin="-228,-366,604,206" 
+                 Width="1000" 
+                 Height="1000"/>
+        <TextBlock Text="Billing" 
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center"
+                   FontSize="100"
+                   Foreground="#000766"/>
+        <Frame x:Name="MainFrame" 
+               NavigationUIVisibility="Hidden"
+               Margin="0 150 0 0"/>
     </Grid>
 </Window>
