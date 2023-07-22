@@ -1,0 +1,92 @@
+﻿<Page x:Class="BILLING.Views.CustomerViews.CustomerWholeInfoView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BILLING.Views.CustomerViews"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1050"
+      Title="CustomerWholeInfoView">
+    <ScrollViewer>
+        <Grid Background="#ebebeb">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Column="0"
+                Style="{StaticResource MaterialDesignIconButton}"
+                ToolTip="Back">
+                <materialDesign:PackIcon Kind="ArrowLeftBoldCircle" />
+            </Button>
+            <ListView 
+                Grid.Column="1"
+                VerticalAlignment="Top">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Header="№"/>
+                            <GridViewColumn Header="MAC"/>
+                            <GridViewColumn Header="FullName"/>
+                            <GridViewColumn Header="Phone"/>
+                            <GridViewColumn Header="Address"/>
+                            <GridViewColumn Header="Operation"/>
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button 
+                Grid.Column="0"
+                Margin="0 15 0 0"
+                materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                ToolTip="MaterialDesignRaisedAccentButton with Round Top Corners">
+                <TextBlock Text="General" />
+            </Button>
+            <Button 
+                Grid.Column="1"
+                Margin="0 15 0 0"
+                materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                ToolTip="MaterialDesignRaisedAccentButton with Round Top Corners">
+                <TextBlock Text="Network" />
+            </Button>
+            <Button 
+                Grid.Column="2"
+                Margin="0 15 0 0"
+                materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                ToolTip="MaterialDesignRaisedAccentButton with Round Top Corners">
+                <TextBlock Text="Payments" />
+            </Button>
+            <Button 
+                Grid.Column="3"
+                Margin="0 15 0 0"
+                materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                ToolTip="MaterialDesignRaisedAccentButton with Round Top Corners">
+                <TextBlock Text="Complaints" />
+            </Button>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Frame Name="CustomerInfoPages"/>
+        </Grid>
+    </Grid>    
+    </ScrollViewer>
+
+</Page>

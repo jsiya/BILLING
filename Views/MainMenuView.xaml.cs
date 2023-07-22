@@ -26,7 +26,7 @@ namespace BILLING.Views
         {
             InitializeComponent();
             DataContext = this;
-            AllPagesFrame.Content = new UserProfileView();
+            AllPagesFrame.Content = new CustomerWholeInfoView();
             ObservableCollection<string> allPages = new ObservableCollection<string>() { "sde", "wegweg" };
         }
     }

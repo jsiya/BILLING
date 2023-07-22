@@ -8,10 +8,25 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
                 <ResourceDictionary Source="\ResourceDictionaries\FontStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <!--PRIMARY-->
+            <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#EBEBEB"/>
+            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="#5C96C1"/>
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#0288d1"/>
+            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="#005CA3"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="#005CA3"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="#000766"/>
+            <!--Secondary-->
+            <SolidColorBrush x:Key="SecondaryHueLightBrush" Color="#EBEBEB"/>
+            <SolidColorBrush x:Key="SecondaryHueLightForegroundBrush" Color="#EBEBEB"/>
+            <SolidColorBrush x:Key="SecondaryHueMidBrush" Color="#C00021"/>
+            <SolidColorBrush x:Key="SecondaryHueMidForegroundBrush" Color="#EBEBEB"/>
+            <SolidColorBrush x:Key="SecondaryHueDarkBrush" Color="#800016"/>
+            <SolidColorBrush x:Key="SecondaryHueDarkForegroundBrush" Color="#EBEBEB"/>
+            <!--ACCENT-->
+            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="#003B8F"/>
+            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="#FFFFFF"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

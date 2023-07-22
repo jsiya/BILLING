@@ -24,5 +24,10 @@ namespace BILLING.Views.CustomerViews
         {
             InitializeComponent();
         }
+
+        public static implicit operator Frame(GeneralView v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

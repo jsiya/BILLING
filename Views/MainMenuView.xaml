@@ -39,7 +39,8 @@
                         Margin="4"
                         Content="Customers"
                         IsChecked="True"
-                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}" />
+                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
+                        />
                 <RadioButton
                         Margin="4"
                         Content="Requests"

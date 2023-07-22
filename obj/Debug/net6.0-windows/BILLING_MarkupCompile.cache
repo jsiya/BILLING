@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Siya\source\repos\BILLING\App.xaml
-10346081487
+15-1080418609
 
-20458938955
+25-1132023320
 1971490424991
-ResourceDictionaries\FontStyle.xaml;Views\CustomerViews\ComplaintsView.xaml;Views\CustomerViews\GeneralView.xaml;Views\CustomerViews\NetworkView.xaml;Views\CustomerViews\PaymentsView.xaml;Views\LoginView.xaml;Views\MainMenuView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\UserProfileView.xaml;
+ResourceDictionaries\FontStyle.xaml;Views\CustomerViews\ComplaintsView.xaml;Views\CustomerViews\CustomerMainMenuView.xaml;Views\CustomerViews\CustomerWholeInfoView.xaml;Views\CustomerViews\GeneralView.xaml;Views\CustomerViews\NetworkView.xaml;Views\CustomerViews\NewCustomerView.xaml;Views\CustomerViews\PaymentsView.xaml;Views\CustomerViews\SearchCustomerView.xaml;Views\LoginView.xaml;Views\MainMenuView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\UserControls\MyStackPanelWithTextAndContent.xaml;Views\UserProfileView.xaml;
 
 False
 

@@ -41,3 +41,13 @@ C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\MainMenuView.g
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\MainMenuView.baml
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\UserProfileView.g.cs
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\UserProfileView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\NewCustomerView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\UserControls\MyStackPanelWithTextAndContent.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\NewCustomerView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\UserControls\MyStackPanelWithTextAndContent.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\CustomerMainMenuView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\CustomerMainMenuView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\SearchCustomerView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\SearchCustomerView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\CustomerWholeInfoView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\CustomerViews\CustomerWholeInfoView.baml

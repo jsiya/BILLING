@@ -4,10 +4,11 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BILLING.Views.CustomerViews"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1050"
       Title="GeneralView">
-    <Page.Resources >
+    <!--<Page.Resources >
         <ResourceDictionary >
            
                     <Style TargetType="TextBlock" x:Key="TBGeneral1" >
@@ -30,10 +31,10 @@
                 
             
         </ResourceDictionary>
-    </Page.Resources>
-    <Grid>
+    </Page.Resources>-->
+    <!--<Grid>
         
-        <Border BorderThickness="20" CornerRadius="30"  BorderBrush="SkyBlue"  >
+        --><!--<Border BorderThickness="20" CornerRadius="30"  BorderBrush="SkyBlue"  >
             <StackPanel Orientation="Vertical" >
                 <StackPanel   Margin=" 0 5" Width=" 400" Orientation="Horizontal" HorizontalAlignment="Left"  >
                     <TextBlock Name = "TBGeneralName1" Text="Name : " Style="{StaticResource TBGeneral1 }"/>
@@ -68,11 +69,166 @@
                     <TextBlock Name ="GeneralMAC2" Style="{DynamicResource TBGeneral2 }"/>
                 </StackPanel>
                 
-            </StackPanel>
-            
-            
+            </StackPanel>                      
+        </Border>--><!--       
+    </Grid>-->
+    <Grid Background="#ebebeb">
+        <Grid.RowDefinitions  >
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Pasport ID"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="1"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Phone"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="2"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Join Date"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="3"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Passport ID"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
 
-        </Border>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Street"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="1"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Apartment"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="2"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Building"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="3"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Phone"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Email"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="1"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="MAC"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="2"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="IP Address"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox Grid.Column="3"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="200"
+                     Text="vreger"
+                     materialDesign:HintAssist.Hint="Join Date"
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ComboBox
+                    Grid.Column="0"
+                    x:Name="OutlinedComboBox"
+                    Width="200"
+                    materialDesign:HintAssist.Hint="Tariff"
+                    ItemsSource="{Binding ShortStringList}"
+                    Style="{StaticResource MaterialDesignOutlinedComboBox}" />
+            <Button 
+                Grid.Column="3"
+                Height="50"
+                Width="150"
+                materialDesign:ButtonAssist.CornerRadius="25"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                ToolTip="Add the new Customer">
+                <TextBlock
+                Text="Submit" />
+            </Button>
+        </Grid>
     </Grid>
 </Page>
