@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModels="clr-namespace:BILLING.ViewModels"
+                    xmlns:customerViewModels="clr-namespace:BILLING.ViewModels.CustomerViewModels"
+                    xmlns:views="clr-namespace:BILLING.Views"
+                    xmlns:customerViews="clr-namespace:BILLING.Views.CustomerViews">
+    <DataTemplate DataType="{x:Type viewModels:MainWindowViewModel}">
+        <views:MainWindow/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:LoginViewModel}">
+        <views:LoginView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:MainViewModel}">
+        <views:MainView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:MainMenuViewModel}">
+        <views:MainMenuView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:UserProfileViewModel}">
+        <views:UserProfileView/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type customerViewModels:ComplaintsViewModel}">
+        <customerViews:ComplaintsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type customerViewModels:CustomerMainMenuViewModel}">
+        <customerViews:CustomerMainMenuView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type customerViewModels:CustomerWholeInfoViewModel}">
+        <customerViews:CustomerWholeInfoView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type customerViewModels:GeneralViewModel}">
+        <customerViews:GeneralView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type customerViewModels:NetworkViewModel}">
+        <customerViews:NetworkView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type customerViewModels:PaymentsViewModel}">
+        <customerViews:PaymentsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type customerViewModels:SearchCustomerViewModel}">
+        <customerViews:SearchCustomerView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type customerViewModels:NewCustomerViewModel}">
+        <views:NewCustomerView/>
+    </DataTemplate>
+
+</ResourceDictionary>

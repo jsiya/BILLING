@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:BILLING.Views"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="550" d:DesignWidth="1000"
+      d:DesignHeight="520" d:DesignWidth="1000"
       Title="LoginView">
     <Grid>
         <materialDesign:Card
@@ -17,7 +17,7 @@
             materialDesign:ElevationAssist.Elevation="Dp8">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1.5*"/>
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -38,6 +38,7 @@
                          materialDesign:HintAssist.Hint="username"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                          BorderBrush="#000766"
+                         Text="{Binding Username}"
                          >
                 </TextBox>
                 <PasswordBox Grid.Row="2"
@@ -47,6 +48,7 @@
                              materialDesign:HintAssist.Hint="password"
                              Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
                              BorderBrush="#000766"
+                             Password="{Binding Password}"
                              >
                 </PasswordBox>
                 <Button Grid.Row="3"
@@ -55,8 +57,10 @@
                         Width="170"
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Background="#D0596E"
+                        Foreground="#ebebeb"
                         BorderThickness="0"
                         Content="Sign In"
+                        Command="{Binding LoginCommand}"
                         />
             </Grid>
         </materialDesign:Card>

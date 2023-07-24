@@ -64,7 +64,7 @@ namespace BILLING.Views.CustomerViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BILLING;V1.0.0.0;component/views/customerviews/generalview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BILLING;component/views/customerviews/generalview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\CustomerViews\GeneralView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -24,7 +24,7 @@ namespace BILLING.Views
         {
             InitializeComponent();
             DataContext = this;
-            MainFrame.Content = new MainMenuView();
+            MainFrame.Content = new LoginView();
         }
     }
 }

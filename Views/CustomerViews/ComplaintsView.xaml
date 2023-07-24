@@ -16,6 +16,7 @@
                         <GridViewColumn Header="№"/>
                         <GridViewColumn Header="Date"/>
                         <GridViewColumn Header="Content"/>
+                        <GridViewColumn Header="Description"/>
                         <GridViewColumn Header="Status"/>
                     </GridView.Columns>
                 </GridView>

@@ -2,6 +2,10 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:BILLING"
+             xmlns:viewModels="clr-namespace:BILLING.ViewModels"
+             xmlns:customerViewModels="clr-namespace:BILLING.ViewModels.CustomerViewModels"
+             xmlns:views="clr-namespace:BILLING.Views"
+             xmlns:customerViews="clr-namespace:BILLING.Views.CustomerViews"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -9,6 +13,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="\ResourceDictionaries\FontStyle.xaml"/>
+                <ResourceDictionary Source="\ResourceDictionaries\DataTemplates.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <!--PRIMARY-->
             <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#EBEBEB"/>
