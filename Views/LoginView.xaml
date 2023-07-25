@@ -48,7 +48,7 @@
                              materialDesign:HintAssist.Hint="password"
                              Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
                              BorderBrush="#000766"
-                             Password="{Binding Password}"
+                             PasswordChanged="PasswordBox_PasswordChanged"
                              >
                 </PasswordBox>
                 <Button Grid.Row="3"

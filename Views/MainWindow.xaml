@@ -34,6 +34,7 @@
                    Foreground="#000766"/>
         <Frame x:Name="MainFrame" 
                NavigationUIVisibility="Hidden"
-               Margin="0 130 0 0"/>
+               Margin="0 130 0 0"
+               />
     </Grid>
 </Window>

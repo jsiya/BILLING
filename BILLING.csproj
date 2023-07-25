@@ -17,9 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Commands\" />
-    <Folder Include="DB\" />
     <Folder Include="SourceDataFiles\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
