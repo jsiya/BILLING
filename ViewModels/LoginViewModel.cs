@@ -1,11 +1,13 @@
 ﻿using BILLING.DB;
 using BILLING.Models;
+using BILLING.Views;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -56,17 +58,17 @@ public class LoginViewModel : ViewModelBase, INotifyPropertyChanged
 
     public event PropertyChangedEventHandler? PropChanged;
 
-    public LoginViewModel(Frame View, Page page)
+    public LoginViewModel(Frame View)
     {
         ViewFrame = View;
-        NextPage = page;
+        NextPage = new MainView();//sonraki sehife
         UsersDB = new UsersDB();
         Users = UsersDB.Users;
         LoginCommand = new RelayCommand(LoginToAccount, CheckUsernameAndPasswordIsNotEmpty);
     }
 
     private bool CheckUsernameAndPasswordIsNotEmpty()
-    {
+    {//username ve password bos deyilse
         if(string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
             return false;
         return true;
@@ -78,9 +80,12 @@ public class LoginViewModel : ViewModelBase, INotifyPropertyChanged
         {
             if(Username == item.Username && Password == item.Password)
             {
-                CurrentUser = item;
-                NextPage.DataContext = new MainViewModel();
-                ViewFrame.Content = NextPage;
+                CurrentUser = item; //halhazirda daxil olan operator
+                NextPage.DataContext = new MainViewModel(ViewFrame, CurrentUser); //s- sonraki sehifenin data contexti
+
+                //ViewFrame.Source = new Uri("C:\\Users\\Siya\\source\\repos\\BILLING\\Views\\MainView.xaml");   //s-bu basqa yol yoxluturdum lazimsizdi
+
+                ViewFrame.Content = NextPage;  //s-frame sonraki view verilir
                 break;
             }
         }

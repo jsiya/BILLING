@@ -19,7 +19,7 @@ public class MainWindowViewModel
     public MainWindowViewModel(Frame View, Page page)
     {
         ViewFrame = View;//bu viewdaki frame deyise bilmek ucun bunu elemiyib ancaq bind eliyende nese error verir - S
-        page.DataContext = new LoginViewModel(ViewFrame, page); // buda frame-e vereciyimiz page ucun datacontext vere bilek deye -S
+        page.DataContext = new LoginViewModel(ViewFrame); // buda frame-e vereciyimiz page ucun datacontext vere bilek deye -S
         ViewFrame.Content = page;
     }
 }
