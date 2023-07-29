@@ -1,4 +1,6 @@
-﻿using BILLING.Views.CustomerViews;
+﻿using BILLING.Models;
+using BILLING.ViewModels;
+using BILLING.Views.CustomerViews;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,9 +27,10 @@ namespace BILLING.Views
         public MainMenuView()
         {
             InitializeComponent();
-            DataContext = this;
-            AllPagesFrame.Content = new CustomerWholeInfoView();
-            ObservableCollection<string> allPages = new ObservableCollection<string>() { "sde", "wegweg" };
+            //s-sehifenin icindeki frame basqa cur cata bilmedim ona gore burda verdim data contexti
+            MainMenuViewModel viewModel = new MainMenuViewModel();
+            viewModel.InnerFrame = AllPagesFrame;//s-bunun viewmodelinin icindeki propertiye menimsetdim
+            DataContext = viewModel;
         }
     }
 }

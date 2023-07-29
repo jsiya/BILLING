@@ -25,10 +25,9 @@ namespace BILLING.Views
         {
             InitializeComponent();
         }
-
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-             if(DataContext is LoginViewModel viewModel)
+             if(DataContext is LoginViewModel viewModel && PasswordBox.Password!=null)
             {
                 viewModel.Password = PasswordBox.Password;
             }

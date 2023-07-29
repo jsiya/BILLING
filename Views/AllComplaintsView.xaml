@@ -1,0 +1,26 @@
+﻿<Page x:Class="BILLING.Views.AllComplaints"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BILLING.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1050"
+      Title="AllComplaints">
+
+    <Grid Background="White">
+        <ListView>
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="№"/>
+                        <GridViewColumn Header="Date"/>
+                        <GridViewColumn Header="Content"/>
+                        <GridViewColumn Header="Description"/>
+                        <GridViewColumn Header="Status"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

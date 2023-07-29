@@ -3,16 +3,9 @@ using BILLING.Models;
 using BILLING.Views;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.IO;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
@@ -67,14 +60,15 @@ public class LoginViewModel : ViewModelBase, INotifyPropertyChanged
         LoginCommand = new RelayCommand(LoginToAccount, CheckUsernameAndPasswordIsNotEmpty);
     }
 
+
     private bool CheckUsernameAndPasswordIsNotEmpty()
     {//username ve password bos deyilse
-        if(string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+        if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
             return false;
         return true;
     }
 
-    private void LoginToAccount()
+    private void LoginToAccount() //burda niyese loopa dusur bilmirem
     {
         foreach (var item in Users)
         {
@@ -83,10 +77,8 @@ public class LoginViewModel : ViewModelBase, INotifyPropertyChanged
                 CurrentUser = item; //halhazirda daxil olan operator
                 NextPage.DataContext = new MainViewModel(ViewFrame, CurrentUser); //s- sonraki sehifenin data contexti
 
-                //ViewFrame.Source = new Uri("C:\\Users\\Siya\\source\\repos\\BILLING\\Views\\MainView.xaml");   //s-bu basqa yol yoxluturdum lazimsizdi
-
                 ViewFrame.Content = NextPage;  //s-frame sonraki view verilir
-                break;
+                return;
             }
         }
     }

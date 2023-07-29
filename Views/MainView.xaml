@@ -27,6 +27,7 @@
                     Background="#EBEBEB"
                     Foreground="#005CA3"
                     Style="{StaticResource MaterialDesignPaperButton}"
+                    Command="{Binding CustomersCommand}"
                     materialDesign:ButtonAssist.CornerRadius="10"
                     >
                 <Image 
@@ -39,6 +40,7 @@
                     Margin="0 0 320 0"
                     Background="#EBEBEB"
                     Style="{StaticResource MaterialDesignPaperButton}"
+                    Command="{Binding RequestsCommand}"
                      materialDesign:ButtonAssist.CornerRadius="10"
                     >
                 <Image
@@ -57,6 +59,7 @@
                     Margin="320 0 0 0"
                     Background="#EBEBEB"
                     Style="{StaticResource MaterialDesignPaperButton}"
+                    Command="{Binding ComplaintsCommand}"
                      materialDesign:ButtonAssist.CornerRadius="10"
                     >
                 <Image
@@ -69,6 +72,7 @@
                      Margin="0 0 320 0"
                     Background="#EBEBEB"
                     Style="{StaticResource MaterialDesignPaperButton}"
+                    Command="{Binding UserProfilCommand}"
                      materialDesign:ButtonAssist.CornerRadius="10"
                     >
                 <Image
@@ -80,9 +84,8 @@
                 Width="200"
                 Content="Log Out"
                 Foreground="#800016"
-                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                 Style="{StaticResource MaterialDesignFlatDarkButton}"
-                
+                Command="{Binding LogOutCommand}"
             ToolTip="MaterialDesignOutlinedButton" />
     </Grid>
 </Page>

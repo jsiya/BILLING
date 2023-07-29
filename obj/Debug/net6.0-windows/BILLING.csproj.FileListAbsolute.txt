@@ -81,3 +81,5 @@ C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\runtimes\win7-x64\na
 C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ResourceDictionaries\DataTemplates.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\AllComplaintsView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\AllComplaintsView.baml

@@ -23,8 +23,6 @@ namespace BILLING.Views.CustomerViews
         public CustomerMainMenuView()
         {
             InitializeComponent();
-            DataContext = this;
-            CustomerPages.Content = new SearchCustomerView();
         }
     }
 }

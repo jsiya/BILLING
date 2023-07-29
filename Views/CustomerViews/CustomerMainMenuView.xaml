@@ -17,14 +17,19 @@
             Orientation="Horizontal">
             <RadioButton
                 Margin="4"
-                Content="FIRST"
+                Content="Search Customer"
                 IsChecked="True"
-                Style="{StaticResource MaterialDesignTabRadioButtonBottom}" />
+                Style="{StaticResource MaterialDesignTabRadioButtonBottom}"
+                Command="{Binding SearchCommand}"
+                />
+            
             <RadioButton
                 Margin="4"
-                Content="SECOND"
+                Content="New Customer"
                 IsChecked="False"
-                Style="{StaticResource MaterialDesignTabRadioButtonBottom}" />
+                Style="{StaticResource MaterialDesignTabRadioButtonBottom}"
+                Command="{Binding NewCommand}"
+                />
         </StackPanel>
         <Grid Grid.Row="1">
             <Frame Grid.Row="1"

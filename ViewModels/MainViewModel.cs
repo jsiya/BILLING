@@ -1,12 +1,10 @@
 ﻿using BILLING.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BILLING.ViewModels.CustomerViewModels;
+using BILLING.Views;
+using BILLING.Views.CustomerViews;
+using GalaSoft.MvvmLight.Command;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Navigation;
 
 namespace BILLING.ViewModels;
 
@@ -14,32 +12,72 @@ public class MainViewModel
 {
     public Frame ViewFrame { get; set; }
     public Page NextPage { get; set; }
+    //public Frame FrameOfNextPage { get; set; }
     public User? CurrentUser { get; set; }
     public ICommand? CustomersCommand { get; set; }
     public ICommand? RequestsCommand { get; set; }
     public ICommand? ComplaintsCommand { get; set; }
     public ICommand? UserProfilCommand { get; set; }
+    public ICommand? LogOutCommand { get; set; }
     public MainViewModel(Frame frame, User user)
     {
         ViewFrame = frame;
         CurrentUser = user;
+        NextPage = new MainMenuView(); //s-bunun data contexti oz backinde verilib icindeki frame gore
+        CustomersCommand = new RelayCommand(NavigateToCustomersPage, true);
+        RequestsCommand = new RelayCommand(NavigateToRequestsPage, true);
+        ComplaintsCommand = new RelayCommand(NavigateToComplaintsPage, true);
+        UserProfilCommand = new RelayCommand(NavigateToUserprofilePage, true);
+        LogOutCommand = new RelayCommand(NavigateToBack, true);
     }
-    private bool Check() => true; //s - click olunanda her zaman true versin
-
+    //s-commandlari parametr verenden sonra deyis!!!!!
     private void NavigateToCustomersPage()
     {
-
+        ViewFrame.Content = NextPage;
+        if(NextPage.DataContext is MainMenuViewModel vf) //s-nextpage-in propertylerine catmaq ucun
+        {
+            vf.CurrentUser = CurrentUser; 
+            vf.MainFrame = ViewFrame; //s- halhazirki framediki geri qayitma ve log out ede bilek
+            vf.InnerFrame.Content = new CustomerMainMenuView(); //s-iceride sag terefdeki fram-in contentini secilmis buttona uygun veririk sonrada data context verilir
+            vf.InnerFrame.DataContext = new CustomerMainMenuViewModel();
+        }
     }
     private void NavigateToRequestsPage()
     {
-
+        ViewFrame.Content = NextPage;
+        if (NextPage.DataContext is MainMenuViewModel vf) //s-nextpage-in propertylerine catmaq ucun
+        {
+            vf.CurrentUser = CurrentUser;
+            vf.MainFrame = ViewFrame;
+            vf.InnerFrame.Content = new PaymentsView();
+            vf.InnerFrame.DataContext = new PaymentsViewModel();
+        }
     }
     private void NavigateToComplaintsPage()
     {
-
+        ViewFrame.Content = NextPage;
+        if (NextPage.DataContext is MainMenuViewModel vf) //s-nextpage-in propertylerine catmaq ucun
+        {
+            vf.CurrentUser = CurrentUser;
+            vf.MainFrame = ViewFrame;
+            vf.InnerFrame.Content = new ComplaintsView();
+            vf.InnerFrame.DataContext = new ComplaintsViewModel();
+        }
     }
     private void NavigateToUserprofilePage()
     {
+        ViewFrame.Content = NextPage;
+        if (NextPage.DataContext is MainMenuViewModel vf) //s-nextpage-in propertylerine catmaq ucun
+        {
+            vf.CurrentUser = CurrentUser;
+            vf.MainFrame = ViewFrame;
+            vf.InnerFrame.Content = new UserProfileView();
+            vf.InnerFrame.DataContext = new UserProfileViewModel();
+        }
+    }
 
+    private void NavigateToBack() //s- bu eslinde geri qayitmaqdi ama burda logout ucun isletdim
+    {
+        ViewFrame.NavigationService.GoBack(); 
     }
 }

@@ -30,6 +30,7 @@
                 Style="{StaticResource MaterialDesignFlatDarkButton}"
                 Content="Billing"
                 Foreground="#000766"
+                    Command="{Binding MainPageCommand}"
                 />
             <StackPanel Grid.Row="1"    
                         Margin="4"
@@ -38,28 +39,44 @@
                 <RadioButton
                         Margin="4"
                         Content="Customers"
-                        IsChecked="True"
+                        IsChecked="False"
                         Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
+                        Command="{Binding CustomersPageCommand}"
                         />
                 <RadioButton
                         Margin="4"
                         Content="Requests"
                         IsChecked="False"
-                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}" />
+                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
+                        Command="{Binding RequestsPageCommand}"
+                    />
                 <RadioButton
                         Margin="4"
                         Content="Complaints"
                         IsChecked="False"
-                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}" />
+                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
+                        Command="{Binding ComplaintsPageCommand}"
+                        />
+                <RadioButton
+                        Margin="4"
+                        Content="Personal Info"
+                        IsChecked="False"
+                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
+                        Command="{Binding PersonalInfoPageCommand}"
+                    />
                 <RadioButton
                         Margin="4"
                         Content="Log out"
                         IsChecked="False"
-                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}" />
+                        Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
+                        Command="{Binding LogOutCommand}"
+                    />
             </StackPanel>
         </Grid>
         <Frame
             Name="AllPagesFrame"
-            Grid.Column="1"/>
+            Grid.Column="1"
+            NavigationUIVisibility="Hidden"
+            />
     </Grid>
 </Page>
