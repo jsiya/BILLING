@@ -23,7 +23,7 @@ namespace BILLING.Views
     {
         public LoginView()
         {
-            InitializeComponent();
+            InitializeComponent();         
         }
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {

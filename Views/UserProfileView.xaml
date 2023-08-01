@@ -28,7 +28,7 @@
                      VerticalAlignment="Center"
                      HorizontalAlignment="Center"
                      Width="200"
-                     Text="vreger"
+                     Text="{Binding Path=CurrentUser.Name}"
                      materialDesign:HintAssist.Hint="Name"
                      IsEnabled="False"
                      Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
@@ -37,7 +37,7 @@
                      HorizontalAlignment="Left"
                      Margin="50 0 0 0"
                       Width="200"
-                     Text="vreger"
+                     Text="{Binding Path=CurrentUser.Surname}"
                      materialDesign:HintAssist.Hint="Surname"
                      IsEnabled="False"
                      Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
@@ -50,19 +50,36 @@
             <TextBox Grid.Column="0"
                 VerticalAlignment="Center"
                      HorizontalAlignment="Center"
-                      Width="200"
-                     Text="vreger"
+                     Width="200"
+                     Text="{Binding Path=CurrentUser.Username}"
                      materialDesign:HintAssist.Hint="Username"
                      IsEnabled="False"
                      Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-            <PasswordBox Grid.Column="1"
-                VerticalAlignment="Center"
-                         Margin="50 0 0 0"
+            
+            <TextBox Grid.Column="1"
+                     VerticalAlignment="Center"
                      HorizontalAlignment="Left"
-                          Width="200"
-                         Password="dsfsdf"
+                     Width="200"
+                     Margin="50 0 0 0"
+                     Text="{Binding NewPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      materialDesign:HintAssist.Hint="Password"
-                     Style="{StaticResource MaterialDesignOutlinedPasswordBox}"/>
+                     IsEnabled="True"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Button 
+                Grid.Column="3"
+                Height="50"
+                Width="150"
+                HorizontalAlignment="Right"
+                Margin="50, 0"
+                materialDesign:ButtonAssist.CornerRadius="25"
+                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                ToolTip="Update"
+                Command="{Binding EditCommand}">
+                <TextBlock
+                Text="Edit" />
+            </Button>
         </Grid>
     </Grid>
 </Page>

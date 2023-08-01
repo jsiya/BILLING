@@ -71,8 +71,10 @@ public class MainViewModel
         {
             vf.CurrentUser = CurrentUser;
             vf.MainFrame = ViewFrame;
-            vf.InnerFrame.Content = new UserProfileView();
-            vf.InnerFrame.DataContext = new UserProfileViewModel();
+            var vm = new UserProfileViewModel();
+            vm.CurrentUser = CurrentUser;
+            vf.InnerFrame.Content = vm;
+            //vf.InnerFrame.DataContext = new UserProfileViewModel();
         }
     }
 

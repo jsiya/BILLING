@@ -7,6 +7,7 @@ using System.Windows.Input;
 using BILLING.Views;
 using BILLING.Views.CustomerViews;
 using BILLING.ViewModels.CustomerViewModels;
+using System.Windows.Navigation;
 
 namespace BILLING.ViewModels;
 
@@ -103,7 +104,11 @@ public class MainMenuViewModel: INotifyPropertyChanged
     private void NavigateToCustomersMainMenuPage()
     {
         InnerFrame.Content = new CustomerMainMenuView();
-        InnerFrame.DataContext = new CustomerMainMenuViewModel();
+        if(InnerFrame.DataContext is CustomerMainMenuViewModel vm)
+        {
+            vm.InnerFrame1 = InnerFrame;
+            vm.MainFrame = MainFrame;
+        }
     }
 
     private void NavigateToRequestsMenuPage()
@@ -124,8 +129,10 @@ public class MainMenuViewModel: INotifyPropertyChanged
     }
     private void NavigateToMainPage()
     {
-        //Buna bax nese duzgun gorsenmmir
-        MainFrame.Content = new LoginView();
-        MainFrame.DataContext = new LoginViewModel(MainFrame);
+        //s-bunu duzelt db-den userler gelmir
+        //s-Buna bax nese duzgun gorsenmmir
+        //MainFrame.NavigationService.Navigate(typeof(LoginViewModel));
+        
+        //MainFrame.DataContext = new LoginViewModel(MainFrame);
     }
 }

@@ -1,6 +1,7 @@
 ﻿
 FC:\Users\Siya\source\repos\BILLING\App.xaml;;
 FC:\Users\Siya\source\repos\BILLING\ResourceDictionaries\DataTemplates.xaml;;
+FC:\Users\Siya\source\repos\BILLING\Views\AllComplaintsView.xaml;;
 FC:\Users\Siya\source\repos\BILLING\Views\CustomerViews\ComplaintsView.xaml;;
 FC:\Users\Siya\source\repos\BILLING\Views\CustomerViews\CustomerMainMenuView.xaml;;
 FC:\Users\Siya\source\repos\BILLING\Views\CustomerViews\CustomerWholeInfoView.xaml;;
@@ -15,5 +16,4 @@ FC:\Users\Siya\source\repos\BILLING\Views\MainView.xaml;;
 FC:\Users\Siya\source\repos\BILLING\Views\MainWindow.xaml;;
 FC:\Users\Siya\source\repos\BILLING\Views\UserControls\MyStackPanelWithTextAndContent.xaml;;
 FC:\Users\Siya\source\repos\BILLING\Views\UserProfileView.xaml;;
-FC:\Users\Siya\source\repos\BILLING\Views\AllComplaintsView.xaml;;
 

@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace BILLING.Models;
 
 public class Customer
 {
-    public int Id { get; set; }
-    public string? SubscriberId { get; set; }
+    public Guid? SubscriberId { get; set; }
     public string? Name { get; set; }
     public string? Surname { get; set; }
     public string? Phone { get; set; }

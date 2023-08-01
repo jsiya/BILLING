@@ -38,7 +38,7 @@
                          materialDesign:HintAssist.Hint="username"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                          BorderBrush="#000766"
-                         Text="{Binding Username}"
+                         Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                          >
                 </TextBox>
                 <PasswordBox Grid.Row="2"

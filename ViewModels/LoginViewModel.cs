@@ -63,7 +63,7 @@ public class LoginViewModel : ViewModelBase, INotifyPropertyChanged
 
     private bool CheckUsernameAndPasswordIsNotEmpty()
     {//username ve password bos deyilse
-        if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+        if (string.IsNullOrEmpty(Username) && string.IsNullOrEmpty(Password))
             return false;
         return true;
     }
