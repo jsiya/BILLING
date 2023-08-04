@@ -84,3 +84,12 @@ C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ResourceDictionaries
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\AllComplaintsView.g.cs
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\AllComplaintsView.baml
 C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\Bogus.dll
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ResourceDictionaries\PushPin_Style\BtnInPushPin.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\RequestViews\AllRequestsView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\RequestViews\RequestMainMenuView.g.cs
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\RequestViews\NewRequestView.g.cs
+C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ResourceDictionaries\PushPin_Style\PushpinStyle.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\RequestViews\AllRequestsView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\RequestViews\NewRequestView.baml
+C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\RequestViews\RequestMainMenuView.baml

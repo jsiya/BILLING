@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Siya\source\repos\BILLING\App.xaml
-17-630087174
+22-117034882
 
-48-1591147219
-212-2016962287
-ResourceDictionaries\DataTemplates.xaml;ResourceDictionaries\FontStyle.xaml;Views\AllComplaintsView.xaml;Views\CustomerViews\ComplaintsView.xaml;Views\CustomerViews\CustomerMainMenuView.xaml;Views\CustomerViews\CustomerWholeInfoView.xaml;Views\CustomerViews\GeneralView.xaml;Views\CustomerViews\NetworkView.xaml;Views\CustomerViews\NewCustomerView.xaml;Views\CustomerViews\PaymentsView.xaml;Views\CustomerViews\SearchCustomerView.xaml;Views\LoginView.xaml;Views\MainMenuView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\UserControls\MyStackPanelWithTextAndContent.xaml;Views\UserProfileView.xaml;
+551183032174
+2131907601650
+ResourceDictionaries\DataTemplates.xaml;ResourceDictionaries\FontStyle.xaml;ResourceDictionaries\PushPin_Style\BtnInPushPin.xaml;ResourceDictionaries\PushPin_Style\PushpinStyle.xaml;Views\AllComplaintsView.xaml;Views\CustomerViews\ComplaintsView.xaml;Views\CustomerViews\CustomerMainMenuView.xaml;Views\CustomerViews\CustomerWholeInfoView.xaml;Views\CustomerViews\GeneralView.xaml;Views\CustomerViews\NetworkView.xaml;Views\CustomerViews\NewCustomerView.xaml;Views\CustomerViews\PaymentsView.xaml;Views\CustomerViews\SearchCustomerView.xaml;Views\LoginView.xaml;Views\MainMenuView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\RequestViews\AllRequestsView.xaml;Views\RequestViews\NewRequestView.xaml;Views\RequestViews\RequestMainMenuView.xaml;Views\UserControls\MyStackPanelWithTextAndContent.xaml;Views\UserProfileView.xaml;
 
 False
 

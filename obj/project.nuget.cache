@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cnDXJrxkRmBiX7OvVmhlNBqaKgN6gyV78ixHL03vZ6SpqZCPV26OTQOSxdSbXtSE+Dlq6kZf+oz8SGcI1Swstg==",
+  "dgSpecHash": "45PKNbXCv4ZKusPjqytJWGuOMjIBe7j+AtIL9pRR0cGUs8nxhLo4I8hQmdaj9k6gI0wbhgIzyUNbKg6WC5HhlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Siya\\source\\repos\\BILLING\\BILLING.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\Siya\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Siya\\.nuget\\packages\\microsoft.maps.mapcontrol.wpf\\1.0.0.3\\microsoft.maps.mapcontrol.wpf.1.0.0.3.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\microsoft.netcore.app\\1.0.5\\microsoft.netcore.app.1.0.5.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\microsoft.netcore.dotnethost\\1.0.1\\microsoft.netcore.dotnethost.1.0.1.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\1.0.5\\microsoft.netcore.dotnethostpolicy.1.0.5.nupkg.sha512",
@@ -134,6 +135,16 @@
     "C:\\Users\\Siya\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Maps.MapControl.WPF 1.0.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Maps.MapControl.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
