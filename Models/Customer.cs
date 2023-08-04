@@ -13,6 +13,7 @@ public class Customer
     public string? MAC { get; set; }
     public string? IdentityNumber { get; set; }
     public float Balance { get; set; }
+    public Network CustomerNetwork { get; set; }
     public Tariff? Tarif { get; set; }
     public Address? CustomerAdress { get; set; }
     public List<Payment>? PaymentHistory { get; set; }

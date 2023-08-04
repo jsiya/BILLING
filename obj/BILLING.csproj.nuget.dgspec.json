@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[7.0.1, )"
             },
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.0.2, )"
+            },
             "MaterialDesignColors": {
               "target": "Package",
               "version": "[2.1.4, )"

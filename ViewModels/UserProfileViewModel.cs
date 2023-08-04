@@ -1,6 +1,9 @@
-﻿using BILLING.Models;
+﻿using BILLING.DB;
+using BILLING.Models;
 using GalaSoft.MvvmLight.Command;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Configuration;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
@@ -16,7 +19,6 @@ public class UserProfileViewModel : INotifyPropertyChanged
         set { 
                 _currentUser = value;
                 OnPropertyChanged();
-            
             }
     }
 
@@ -44,6 +46,8 @@ public class UserProfileViewModel : INotifyPropertyChanged
     private void EditUserInfo()//s- Passwordu deyisende db -ye yazmagi unutma sonra!!!!
     {
         CurrentUser.Password = NewPassword;
+        UsersDB usersDB = new UsersDB();
+        usersDB.Update(CurrentUser);
     }
 
 }

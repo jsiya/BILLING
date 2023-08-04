@@ -83,3 +83,4 @@ C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\GeneratedInternalTyp
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\ResourceDictionaries\DataTemplates.baml
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\AllComplaintsView.g.cs
 C:\Users\Siya\source\repos\BILLING\obj\Debug\net6.0-windows\Views\AllComplaintsView.baml
+C:\Users\Siya\source\repos\BILLING\bin\Debug\net6.0-windows\Bogus.dll

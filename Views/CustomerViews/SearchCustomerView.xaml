@@ -88,16 +88,22 @@
             </Button>
         </Grid>
         <Grid Grid.Row="2">
-            <ListView>
+            <ListView ItemsSource="{Binding AllCustomers}">
                 <ListView.View>
                     <GridView>
                         <GridView.Columns>
-                            <GridViewColumn Header="№"/>
-                            <GridViewColumn Header="MAC"/>
-                            <GridViewColumn Header="FullName"/>
-                            <GridViewColumn Header="Phone"/>
-                            <GridViewColumn Header="Address"/>
-                            <GridViewColumn Header="Operation"/>
+                            <GridViewColumn Header="№" 
+                                            DisplayMemberBinding="{Binding SubscriberId}"/>
+                            <GridViewColumn Header="MAC"
+                                            DisplayMemberBinding="{Binding MAC}"/>
+                            <GridViewColumn Header="FullName"
+                                            DisplayMemberBinding="{Binding Name}"/>
+                            <GridViewColumn Header="Phone"
+                                            DisplayMemberBinding="{Binding Phone}"/>
+                            <GridViewColumn Header="Address"
+                                            DisplayMemberBinding="{Binding CustomerAdress}"/>
+                            <!--<GridViewColumn Header="Operation"
+                                            DisplayMemberBinding="{Binding }"/>-->
                         </GridView.Columns>
                     </GridView>
                 </ListView.View>

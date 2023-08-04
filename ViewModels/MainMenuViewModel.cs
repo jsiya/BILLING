@@ -77,12 +77,12 @@ public class MainMenuViewModel: INotifyPropertyChanged
     public Frame MainFrame { get; set; } //s-hal-hazirda kenarda menu olan page-in yerlesdiyi
                                       //frame bunu getirdimki billing buttonu secende geri qayida bilek ve ya logout ucun contenti deyise bilek
     public Frame InnerFrame { get; set; } //s-bu sag terefdeki framedi bunu bind eliye bilmedim ona gore bir basa viewnun backinden parametr kimi gonderecem
-    public ICommand? MainPageCommand { get; set; }
-    public ICommand? CustomersPageCommand { get; set; }
-    public ICommand? RequestsPageCommand { get; set; }
-    public ICommand? ComplaintsPageCommand { get; set; }
-    public ICommand? PersonalInfoPageCommand { get; set; }
-    public ICommand? LogOutCommand { get; set; }
+    public ICommand? MainPageCommand { get; set; } //s- basdaki menuya qatittmaq
+    public ICommand? CustomersPageCommand { get; set; } //s - musterilere aid page
+    public ICommand? RequestsPageCommand { get; set; } //requestlere
+    public ICommand? ComplaintsPageCommand { get; set; } //sikayetlere
+    public ICommand? PersonalInfoPageCommand { get; set; } //userin melumatlari
+    public ICommand? LogOutCommand { get; set; } //login page qayitma bu islemir!!!!
     public MainMenuViewModel()
     {
         MainPageCommand = new RelayCommand(NavigateToMainPage, true);
@@ -90,7 +90,7 @@ public class MainMenuViewModel: INotifyPropertyChanged
         RequestsPageCommand = new RelayCommand(NavigateToRequestsMenuPage, true);
         ComplaintsPageCommand = new RelayCommand(NavigateToAllComplaintsPage, true);
         PersonalInfoPageCommand = new RelayCommand(NavigateToUserPersonalInfoPage, true);
-        LogOutCommand = new RelayCommand(NavigateToMainPage, true);
+        LogOutCommand = new RelayCommand(NavigateToLogOutPage, true);
     }
 
 
@@ -104,7 +104,7 @@ public class MainMenuViewModel: INotifyPropertyChanged
     private void NavigateToCustomersMainMenuPage()
     {
         InnerFrame.Content = new CustomerMainMenuView();
-        if(InnerFrame.DataContext is CustomerMainMenuViewModel vm)
+        if(InnerFrame.DataContext is CustomerMainMenuViewModel vm) //burda data contexti viewnun backinde verilib frame-e gore
         {
             vm.InnerFrame1 = InnerFrame;
             vm.MainFrame = MainFrame;
@@ -118,21 +118,28 @@ public class MainMenuViewModel: INotifyPropertyChanged
 
     private void NavigateToAllComplaintsPage()
     {
-        InnerFrame.Content = new AllComplaints();
-        InnerFrame.DataContext = new AllComplaintsViewModel();
+        InnerFrame.Content = new AllComplaintsViewModel();
+        //InnerFrame.DataContext = new AllComplaintsViewModel();
     }
 
     private void NavigateToUserPersonalInfoPage()
     {
-        InnerFrame.Content = new UserProfileView();
-        InnerFrame.DataContext = new UserProfileViewModel();
+        //InnerFrame.Content = new UserProfileView();
+        //InnerFrame.DataContext = new UserProfileViewModel();
+        var vm = new UserProfileViewModel();
+        vm.CurrentUser = CurrentUser;
+        InnerFrame.Content = vm;
     }
     private void NavigateToMainPage()
+    {
+        
+    }
+    private void NavigateToLogOutPage()
     {
         //s-bunu duzelt db-den userler gelmir
         //s-Buna bax nese duzgun gorsenmmir
         //MainFrame.NavigationService.Navigate(typeof(LoginViewModel));
-        
+
         //MainFrame.DataContext = new LoginViewModel(MainFrame);
     }
 }

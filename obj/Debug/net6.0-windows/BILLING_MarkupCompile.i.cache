@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Siya\source\repos\BILLING\App.xaml
 17-630087174
 
-481228045924
-211-806877993
+50637125727
+212-2016962287
 ResourceDictionaries\DataTemplates.xaml;ResourceDictionaries\FontStyle.xaml;Views\AllComplaintsView.xaml;Views\CustomerViews\ComplaintsView.xaml;Views\CustomerViews\CustomerMainMenuView.xaml;Views\CustomerViews\CustomerWholeInfoView.xaml;Views\CustomerViews\GeneralView.xaml;Views\CustomerViews\NetworkView.xaml;Views\CustomerViews\NewCustomerView.xaml;Views\CustomerViews\PaymentsView.xaml;Views\CustomerViews\SearchCustomerView.xaml;Views\LoginView.xaml;Views\MainMenuView.xaml;Views\MainView.xaml;Views\MainWindow.xaml;Views\UserControls\MyStackPanelWithTextAndContent.xaml;Views\UserProfileView.xaml;
 
-True
+False
 

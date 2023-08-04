@@ -26,12 +26,12 @@ public class CustomerMainMenuViewModel: ViewModelBase
         NewCommand = new RelayCommand(NavigateToCreateNewCustomerPage, true);
     }
 
-    private void NavigateToSearchPage()
+    private void NavigateToCreateNewCustomerPage ()
     {
         InnerFrame2.Content = new NewCustomerView();
         InnerFrame2.DataContext = new NewCustomerViewModel();
     }
-    private void NavigateToCreateNewCustomerPage()
+    private void NavigateToSearchPage()
     {
         InnerFrame2.Content = new SearchCustomerView();
         InnerFrame2.DataContext = new SearchCustomerViewModel();

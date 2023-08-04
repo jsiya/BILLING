@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3Ay8lksq4aeEdnF/Jri9mVpZhB1Fgryj1X9JrFfSY96uinpkjK9s5V5F7X4HCFTwYWwurtBaNPfbwg0/8Q8WqQ==",
+  "dgSpecHash": "cnDXJrxkRmBiX7OvVmhlNBqaKgN6gyV78ixHL03vZ6SpqZCPV26OTQOSxdSbXtSE+Dlq6kZf+oz8SGcI1Swstg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Siya\\source\\repos\\BILLING\\BILLING.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Siya\\.nuget\\packages\\autofac\\7.0.1\\autofac.7.0.1.nupkg.sha512",
+    "C:\\Users\\Siya\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\Siya\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
