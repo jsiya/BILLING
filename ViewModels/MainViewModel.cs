@@ -1,6 +1,8 @@
 ﻿using BILLING.Models;
 using BILLING.ViewModels.CustomerViewModels;
+using BILLING.ViewModels.RequestViewModels;
 using BILLING.Views;
+using BILLING.Views.RequestViews;
 using BILLING.Views.CustomerViews;
 using GalaSoft.MvvmLight.Command;
 using System.Windows.Controls;
@@ -39,7 +41,7 @@ public class MainViewModel
             vf.CurrentUser = CurrentUser; 
             vf.MainFrame = ViewFrame; //s- halhazirki framediki geri qayitma ve log out ede bilek
             vf.InnerFrame.Content = new CustomerMainMenuView(); //s-iceride sag terefdeki fram-in contentini secilmis buttona uygun veririk sonrada data context verilir
-            vf.InnerFrame.DataContext = new CustomerMainMenuViewModel();
+            //vf.InnerFrame.DataContext = new CustomerMainMenuViewModel();
         }
     }
     private void NavigateToRequestsPage()
@@ -49,8 +51,8 @@ public class MainViewModel
         {
             vf.CurrentUser = CurrentUser;
             vf.MainFrame = ViewFrame;
-            vf.InnerFrame.Content = new PaymentsView();
-            vf.InnerFrame.DataContext = new PaymentsViewModel();
+            vf.InnerFrame.Content = new RequestMainMenuView();
+            //vf.InnerFrame.DataContext = new RequestMainMenuViewModel();
         }
     }
     private void NavigateToComplaintsPage()
@@ -60,8 +62,8 @@ public class MainViewModel
         {
             vf.CurrentUser = CurrentUser;
             vf.MainFrame = ViewFrame;
-            vf.InnerFrame.Content = new ComplaintsView();
-            vf.InnerFrame.DataContext = new ComplaintsViewModel();
+            vf.InnerFrame.Content = new AllComplaints();
+            vf.InnerFrame.DataContext = new AllComplaintsViewModel();
         }
     }
     private void NavigateToUserprofilePage()

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BILLING.ViewModels.CustomerViewModels;
+using BILLING.ViewModels.RequestViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,11 @@ namespace BILLING.Views.RequestViews
         public RequestMainMenuView()
         {
             InitializeComponent();
+            DataContext = this;
+            RequestMainMenuViewModel viewModel = new RequestMainMenuViewModel();
+            viewModel.InnerFrame2 = CustomerPages;
+            viewModel.InnerFrame2.Content = new NewRequestView();
+            DataContext = viewModel;
         }
     }
 }

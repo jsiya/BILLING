@@ -31,13 +31,15 @@
             <RadioButton
                 Margin="4"
                 Content="All Requests"
-                IsChecked="True"
-                Style="{StaticResource MaterialDesignTabRadioButtonBottom}" />
+                IsChecked="False"
+                Style="{StaticResource MaterialDesignTabRadioButtonBottom}"
+                Command="{Binding AllCommand}"/>
             <RadioButton
                 Margin="4"
                 Content="New Request"
-                IsChecked="False"
-                Style="{StaticResource MaterialDesignTabRadioButtonBottom}" />
+                IsChecked="True"
+                Style="{StaticResource MaterialDesignTabRadioButtonBottom}" 
+                Command="{Binding AddCommand}"/>
         </StackPanel>
         <Grid Grid.Row="1">
             <Frame Grid.Row="1"
